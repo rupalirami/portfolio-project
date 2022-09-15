@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +7,44 @@
   
   /* nav stylings */
 
-nav,
-nav *{
+header,
+header *{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav {
+header {
     justify-content: space-between;
     width: 100%;
     height: 50px;
     font-size: 1.25em;
 }
-#nav-logo{
-    width: 50%;
+ 
+.left-side {
+    width: 60%;
     height: 100%;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: left;
+    align-content: space-around;
     font-weight: bold;
     font-size: small;
 }
-#nav-links{
-    width: 50%;
+
+.mid-center {
+    /* border: 1px solid orange; */
+    font-weight: lighter;
+    font-size: smaller;
+    width: 250px;
+}
+
+.right-side{
+    width: 40%;
     height: 100%;
-    /* justify-content:flex-end; */
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-self: end;
     font-size: small;
  
 }
@@ -42,7 +55,7 @@ main {
     height: 500px;
     margin: 25px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -50,38 +63,120 @@ section {
     border: solid black;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content:space-around;
     align-items: center;
 }
 
-#short-descr {
-    /* min-block-size: 50%; */
-    /* min-width: 50%;
-    min-height: 50%; */
+section {
+    flex-direction: row;
+}
+
+.short-descr {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
     border: solid blue;
 }
 
-#image {
+.image {
     /* min-block-size: 50%; */
     /* min-width: 50%;
     min-height: 50%; */
-    border: solid red;
+    border: 1px solid red;
 }
 
-#line-1 {
-    color: cyan;
-    font-size: smaller;
+.first-line {
+    color: aqua;
+    font-size: 14px;
+    border: 1px solid black;
 }
 
-#line-2 {
+.second-line {
     font-weight: bold;
-    font-size: larger;
+    font-size: 22px;
+    flex-wrap: wrap;
 }
 
-#button {
+.button {
     border: 1px solid black;
     border-radius: 5px;
     width: 120px;
     color: gray;
-    font-size: 10px;
+    font-size: 11px;
+    background-color: lightcyan;
+}
+
+
+.technical-skills-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid maroon;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: 100px;
+    border: 1px solid green;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 1px solid blueviolet;
+}
+.project-detail {
+    border: 1px solid red;
+    background-color: lightcyan;
+    min-height:100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-me-section {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: 250px;
+    width: 80%;
+    /* border: 1px solid green; */
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: left; */
+    justify-content: space-around;
+    align-items: center;
+}
+.right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: midnightblue;
+    min-height: 30px;
+    color: white
 }
