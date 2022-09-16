@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Arial, Helvetica;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* nav stylings */
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.header .header__div {
+  display: flex;
+  width: 30%;
+  height: 10px;
+  margin: 10px 0px 0px 10px;
+  padding: 0;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  font-weight: bold;
+  font-size: medium;
+}
+.header .header__nav {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: center;
+  font-size: small;
+}
+.header a {
+  padding: 20px;
+}
+.header .button {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 120px;
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: lightcyan;
+  justify-content: center;
+  align-content: center;
+  margin-right: 5px;
+}
+
+/* content stylings */
+main {
+  width: 100%;
+  height: 100%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+main .information .information__div {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .information .information__div .first-line {
+  /* border: 1px solid black; */
+  color: aqua;
+  font-size: 14px;
+  margin: 0px 0px 10px 0px;
+}
+main .information .information__div .second-line {
+  font-weight: bold;
+  font-size: 25px;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 10px;
+}
+main .information .information__div .button {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 175px;
+  color: gray;
+  font-size: 15px;
+  background-color: lightcyan;
+  justify-content: center;
+  align-content: center;
+}
+main .information .information__image {
+  margin-left: 0;
+  width: 500px;
+  height: auto;
+  margin-right: 50px;
+}
+main .technicalskills {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  margin: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+main .technicalskills .technicalskills__heading {
+  display: flex;
+  margin: 20px;
+  justify-items: center;
+  align-items: center;
+}
+main .technicalskills .icon-list {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+}
+main .technicalskills .icon {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+}
+main .projects {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+main .projects .projects__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 20px 20px;
+}
+main .projects .projects__div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+main .projects .project-subheading {
+  font-size: larger;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .projects .project-detail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  padding-left: 10px;
+  margin: 10px 10px 10px 10px;
+  align-items: center;
+  border: 1px dotted white;
+  border-radius: 5px;
+}
+main .projects .project-links {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-content: space-between;
+  justify-content: space-between;
+  font-size: small;
+  width: 150px;
+}
+main .aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  word-wrap: normal;
+  width: 95%;
+  margin: 20px;
+}
+main .aboutme .aboutme-heading {
+  margin: 0px 0px 10px 0px;
+}
+main .aboutme .left-section {
+  display: flex;
+  width: auto;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+main .aboutme .right-section {
+  margin-right: 0px;
+  padding-left: 20px;
+  height: 150px;
+}
+main .mid-center {
+  font-weight: lighter;
+  font-size: smaller;
+  width: 30%;
+}
+main footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 30px;
+  }
+  .header .header__div {
+    display: flex;
+    justify-items: flex-start;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 5px;
+  }
+  .header .header__nav {
+    width: 390px;
+    height: 10px;
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: center;
+    align-content: space-around;
+    align-items: center;
+  }
+  .header a {
+    margin: 10px;
+  }
+  main {
+    width: 480px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .information {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+  }
+  main .information .information__div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+  }
+  main .information .information__div .first-line {
+    /* border: 1px solid black; */
+    color: aqua;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+  }
+  main .information .information__div .second-line {
+    font-weight: bold;
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+  }
+  main .information .information__div .button {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 175px;
+    color: gray;
+    font-size: 15px;
+    background-color: lightcyan;
+    justify-content: center;
+    align-content: center;
+  }
+  main .technicalskills {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    margin-left: 0px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  main .technicalskills .technicalskills__heading {
+    display: flex;
+    margin: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  main .technicalskills .icon-list {
+    width: 480px;
+    height: 50px;
+  }
+  main .technicalskills .icon {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 50px;
+  }
+}/*# sourceMappingURL=portfolio-day4.css.map */

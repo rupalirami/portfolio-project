@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+  
+  /* nav stylings */
+
+header,
+header *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    font-size: 1.25em;
+}
+ 
+.left-side {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-content: space-around;
+    font-weight: bold;
+    font-size: small;
+}
+
+.mid-center {
+    /* border: 1px solid orange; */
+    font-weight: lighter;
+    font-size: smaller;
+    width: 250px;
+}
+
+.right-side{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: end;
+    font-size: small;
+ 
+}
+/* content stylings */
+
+main {
+    width: 1000px;
+    height: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: beige;
+  }
+
+section {
+    /* border: solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+section {
+    flex-direction: row;
+}
+
+.short-descr {
+    /* border: solid blue; */
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* .image { */
+    /* min-block-size: 50%; */
+    /* min-width: 50%;
+    min-height: 50%; */
+    /* border: 1px solid red;
+} */
+
+.first-line {
+    /* border: 1px solid black; */
+    color: aqua;
+    font-size: 14px;
+
+}
+
+.second-line {
+    font-weight: bold;
+    font-size: 22px;
+    flex-wrap: wrap;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 120px;
+    color: gray;
+    font-size: 11px;
+    background-color: lightcyan;
+}
+
+.technical-skills-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
+.icon-list {
+    /* border: 1px solid maroon; */
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    width: 100px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    /* background-color: lightcyan; */
+}
+.project-gallery {
+    /* border: 1px solid blueviolet; */
+    /* background-color: lightcyan; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: space-around ; */
+}
+.project-detail {
+    /* border: 1px solid red;
+    background-color: lightcyan; */
+    /* color:aquamarine; */
+    min-height:100px;
+    justify-content: space-around ;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-heading {
+    justify-content: center;
+}
+
+.about-me-section {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: 250px;
+    width: 80%;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: left; */
+    justify-content: space-around;
+    align-items: center;
+}
+.right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 40%;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: midnightblue;
+    min-height: 30px;
+    color: white
+}
