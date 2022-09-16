@@ -186,7 +186,7 @@ main {
         display: flex;
         flex-direction: column;
         // min-height: 300px;
-        margin-left: 20px;
+        margin-left: 10px;
         // border: 1px solid blueviolet; 
     
 
@@ -205,47 +205,54 @@ main {
             // justify-content: space-around ;
 
             // border: 1px solid blueviolet; 
-        }
 
-        .project-subheading {
-            font-size: larger;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .project-detail {
-            display: flex;
-            flex-direction: column;
-            min-height:100px;
-            padding-left: 10px;;
-            margin: 10px 10px 10px 10px;
+            .project-subheading {
+                font-size: larger;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .project-detail {
+                display: flex;
+                flex-direction: column;
+                // min-height:100px; **
+                padding-left: 10px;;
+                margin: 10px 10px 10px 10px;
 
-            // justify-content: center;
-            align-items: center;
-            border: 1px dotted white;
-            border-radius: 5px;;
-            // border: 1px solid red;
-        }
-        .project-links{
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-            // margin: 0px 0px 0px 10px;
-            // margin-left: 40px;
-            align-content: space-between;
+                // justify-content: center;
+                align-items: center;
+                border: 1px dotted white;
+                border-radius: 5px;;
+                // border: 1px solid red;
+            }
+            .project-links{
+                display: flex;
+                flex-direction: row;
+                padding: 10px; 
+                // margin: 5px 5px 5px 5px;
+                // margin-left: 40px;
+                align-content: space-between;
+                justify-content: space-between;
+                font-size: 10px;
 
-            justify-content: space-between;
-            font-size: small;
+                // width: 150px; **
 
-            width: 150px;
-            // flex-direction: column;
-            // border: 1px solid red;
+                // flex-direction: column;
+                // border: 1px solid red;
+            }
+
+            .a-sep{
+                // justify-content: space-between;
+                margin: 0 2px 0 2px;
+            }
+
+
+            // .code {
+            //     margin:10px
+            // }
+            // .preview {
+            //     margin:1opx;
+            // }
         }
-        // .code {
-        //     margin:10px
-        // }
-        // .preview {
-        //     margin:1opx;
-        // }
     }
 
     .aboutme {
@@ -305,7 +312,8 @@ main {
         // background-color: midnightblue;
         justify-content: space-between;
         min-height: 30px;
-        color: white
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
 }
