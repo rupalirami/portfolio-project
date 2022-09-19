@@ -56,12 +56,9 @@
 
 /* content stylings */
 main {
-  width: 100%;
-  height: 100%;
-  margin: 25px auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  border: 1px solid white;
 }
 main .information {
   display: flex;
@@ -77,10 +74,11 @@ main .information .information__div {
   align-items: center;
 }
 main .information .information__div .first-line {
-  /* border: 1px solid black; */
+  /* border: 1px solid blue; */
   color: aqua;
-  font-size: 14px;
-  margin: 0px 0px 10px 0px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
 }
 main .information .information__div .second-line {
   font-weight: bold;
@@ -100,10 +98,8 @@ main .information .information__div .button {
   align-content: center;
 }
 main .information .information__image {
-  margin-left: 0;
-  width: 500px;
+  margin: 0px 50px 0px 0px;
   height: auto;
-  margin-right: 50px;
 }
 main .technicalskills {
   display: flex;
@@ -121,25 +117,28 @@ main .technicalskills .technicalskills__heading {
   align-items: center;
 }
 main .technicalskills .icon-list {
-  height: 60px;
+  height: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 10px 0px 10px 0px;
-  padding: 10px;
+  justify-content: space-between;
+  margin: 0px 0px 0px 0px;
+  font-size: small;
+  padding: 0px;
 }
-main .technicalskills .icon {
+main .technicalskills .icon-pair {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   height: 50px;
-  width: 100px;
+  width: 75px;
+}
+main .technicalskills .icon {
+  margin: 0px 0px 10px 0px;
 }
 main .projects {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
 }
 main .projects .projects__heading {
   display: flex;
@@ -151,17 +150,24 @@ main .projects .projects__div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
 }
 main .projects .projects__div .project-subheading {
   font-size: larger;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+main .projects .projects__div .project-code {
+  font-size: small;
+  margin: 0px 5px 5px 15px;
+  width: 100%;
+  justify-items: left;
+}
 main .projects .projects__div .project-detail {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
-  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  margin: 10px 10px 10px 20px;
   align-items: center;
   border: 1px dotted white;
   border-radius: 5px;
@@ -212,7 +218,6 @@ main footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-height: 30px;
   margin-left: 10px;
   margin-right: 10px;
 }
