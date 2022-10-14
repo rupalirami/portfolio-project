@@ -44,7 +44,7 @@ $buttonFontColor : grey;
         flex-direction: row;
         margin: 0px 20px 0px 0px;
         @media screen and (max-width: 500px) { // &__nav media start
-            margin: 0px 0px 0px 0px;
+            margin: 0px 0px 0px 20px;
             width: 90%;
             justify-content:space-evenly;
             align-items: center;
@@ -56,20 +56,22 @@ $buttonFontColor : grey;
                 font-size: 152x;
             } // a media end
         } // a end
-        .button { // .button start
+        button { // button start
             display: flex;
             border: 1px solid $backgroundColor;
+            height: 40px;
             border-radius: 5px;
             background-color: $buttonBackgroundColor ;
             color : $buttonFontColor;
             justify-content: center;
             align-items: center;
-            margin-right: 10px;
-            @media screen and (max-width: 500px) { // .button media start
-                margin-right: 0px;
-                font-size: 12px;
-            } // .button media
-        } // .button end
+            margin: 10px 0px 0px 0px;
+            padding: 5px;
+            @media screen and (max-width: 500px) { // nav button media start
+                margin: 5px 0px 0px 0px;
+                font-size: 10px;
+            } // nav button media
+        } // button end
     } // &__nav end
 } // header end
 main 
@@ -89,8 +91,10 @@ main
             // width: 100%;
             display: flex;   
             flex-direction: column-reverse;
+            width: 100vw;
             justify-content:space-around;
             align-items: center;
+            
         } // .information media end
         &__div { // &__div start
             display: flex;
@@ -101,8 +105,10 @@ main
             @media screen and (max-width: 500px) { // &__div media start 
                 display: flex;
                 flex-direction: column-reverse;
+                margin-left: 20px;
                 height: 200px;
                 align-items: center;
+                justify-content: center;
             } // &__div media end
             .first-line { // .first-line start
                 color : $fontColorAlternate;
@@ -127,36 +133,29 @@ main
                     flex-wrap: wrap;
                     margin: 10px 10px 10px 10px;
                 } // .second-line media end
-            } .second-line end
-            .button { // .button start
+            } // .second-line end
+            button { // button start
                 display: flex;
                 border: 1px solid $backgroundColor;
                 border-radius: 5px;
-                color: $buttonFontColor;
-                font-size: 18px;
-                padding: 15px;
-                margin : 30px 0px 30px 0px;
-                background-color: $buttonBackgroundColor ;
+                background-color: lightcyan ;
+                color : $buttonFontColor;
                 justify-content: center;
-                @media screen and (max-width: 500px) { // // .button media start  
-                    display: flex;
-                    border: 1px solid black;
-                    border-radius: 5px;
-                    width: 175px;
-                    color: gray;
-                    font-size: 15px;
-                    background-color: lightcyan;
-                    justify-content: center;
-                    align-content: center;
-                } // .button media end
-            } // .button end
+                align-items: center;
+                margin: 30px 0px 30px 0px;
+                padding: 12px;
+                @media screen and (max-width: 500px) { // nav button media start
+                    margin: 5px 0px 0px 0px;
+                    font-size: 10px;
+                } // nav button media
+            } // button end
         } // &__div end 
         &__image { // &__image start
             margin:0px 20px 0px 20px;
             // width: 500px;
             height: auto;
             @media screen and (max-width: 500px) { // &__image media start
-                margin: 0px;
+                margin: auto;
             } // &__image media end
         } // &__image end
     } // .information end
@@ -172,8 +171,7 @@ main
             display: flex;
             flex-direction: column;
             // width: 480px;
-            margin-left: 0px;
-            padding:0;
+            padding: 2px;
             justify-content: center;
             align-items: center;
         } // .technicalskills media end
@@ -229,7 +227,9 @@ main
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 20px 20px 20px 20px;
+            @media screen and (max-width: 500px) { // .projects media start
+                padding-left: 15px;
+            } // .projects media end
         } // &__heading end
         &__div { // &__div start
             display: grid;
@@ -269,6 +269,9 @@ main
                         margin: 5px 5px 5px 5px;
                     } // .a-sep end
                 } // .project-links end
+                @media screen and (max-width: 500px) { // .project-detail media start
+                    margin: 7px;
+                } // .project-detail media end
             } // project-detail end
         } // &__div end
     } // .projects end
@@ -296,6 +299,9 @@ main
             margin-right: 0px;
             padding-left: 20px;
             height: 150px;
+            @media screen and (max-width: 500px) { // .right-section media start
+                display: none;
+            } // .right-section media end
         } // .right-section end
     } // .aboutme end
     .footer { // .footer start
@@ -316,6 +322,19 @@ main
         } // &__leftside end
         &__rightside { // &__rightside start
             margin : 0px 10px 0px 0px;
+            @media screen and (max-width: 500px) { // .&__rightside media start
+                display: flex;
+                flex-direction: row;
+                margin-right: 10px;
+                padding-left: 10px;
+            } // .&__rightside media end
         } // &__rightside end
+        @media screen and (max-width: 500px) { // .footer media start
+            padding: 0px 0px 10px 7px;
+            margin-bottom: 10px;
+            .empty-space {
+                margin:5px;
+            }
+        } // .footer media end
     } // .footer end
 } // main end

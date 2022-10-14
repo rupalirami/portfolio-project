@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 500px) {
   .header__nav {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     width: 90%;
     justify-content: space-evenly;
     align-items: center;
@@ -58,20 +58,22 @@
     font-size: 152x;
   }
 }
-.header__nav .button {
+.header__nav button {
   display: flex;
   border: 1px solid black;
+  height: 40px;
   border-radius: 5px;
   background-color: lightCyan;
   color: grey;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin: 10px 0px 0px 0px;
+  padding: 5px;
 }
 @media screen and (max-width: 500px) {
-  .header__nav .button {
-    margin-right: 0px;
-    font-size: 12px;
+  .header__nav button {
+    margin: 5px 0px 0px 0px;
+    font-size: 10px;
   }
 }
 
@@ -95,6 +97,7 @@ main .information {
   main .information {
     display: flex;
     flex-direction: column-reverse;
+    width: 100vw;
     justify-content: space-around;
     align-items: center;
   }
@@ -110,8 +113,10 @@ main .information__div {
   main .information__div {
     display: flex;
     flex-direction: column-reverse;
+    margin-left: 20px;
     height: 200px;
     align-items: center;
+    justify-content: center;
   }
 }
 main .information__div .first-line {
@@ -142,28 +147,21 @@ main .information__div .second-line {
     margin: 10px 10px 10px 10px;
   }
 }
-main .information__div .second-line end .button {
+main .information__div button {
   display: flex;
   border: 1px solid black;
   border-radius: 5px;
+  background-color: lightcyan;
   color: grey;
-  font-size: 18px;
-  padding: 15px;
-  margin: 30px 0px 30px 0px;
-  background-color: lightCyan;
   justify-content: center;
+  align-items: center;
+  margin: 30px 0px 30px 0px;
+  padding: 12px;
 }
 @media screen and (max-width: 500px) {
-  main .information__div .second-line end .button {
-    display: flex;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 175px;
-    color: gray;
-    font-size: 15px;
-    background-color: lightcyan;
-    justify-content: center;
-    align-content: center;
+  main .information__div button {
+    margin: 5px 0px 0px 0px;
+    font-size: 10px;
   }
 }
 main .information__image {
@@ -172,7 +170,7 @@ main .information__image {
 }
 @media screen and (max-width: 500px) {
   main .information__image {
-    margin: 0px;
+    margin: auto;
   }
 }
 main .technicalskills {
@@ -188,8 +186,7 @@ main .technicalskills {
   main .technicalskills {
     display: flex;
     flex-direction: column;
-    margin-left: 0px;
-    padding: 0;
+    padding: 2px;
     justify-content: center;
     align-items: center;
   }
@@ -252,7 +249,11 @@ main .projects__heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px 20px 20px;
+}
+@media screen and (max-width: 500px) {
+  main .projects__heading {
+    padding-left: 15px;
+  }
 }
 main .projects__div {
   display: grid;
@@ -294,6 +295,11 @@ main .projects__div .project-detail .project-links {
 main .projects__div .project-detail .project-links .a-sep {
   margin: 5px 5px 5px 5px;
 }
+@media screen and (max-width: 500px) {
+  main .projects__div .project-detail {
+    margin: 7px;
+  }
+}
 main .aboutme {
   display: flex;
   justify-content: center;
@@ -320,6 +326,11 @@ main .aboutme .right-section {
   padding-left: 20px;
   height: 150px;
 }
+@media screen and (max-width: 500px) {
+  main .aboutme .right-section {
+    display: none;
+  }
+}
 main .footer {
   display: flex;
   flex-direction: row;
@@ -339,4 +350,21 @@ main .footer__leftside .email-address {
 }
 main .footer__rightside {
   margin: 0px 10px 0px 0px;
+}
+@media screen and (max-width: 500px) {
+  main .footer__rightside {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .footer {
+    padding: 0px 0px 10px 7px;
+    margin-bottom: 10px;
+  }
+  main .footer .empty-space {
+    margin: 5px;
+  }
 }/*# sourceMappingURL=portfolio-day4.css.map */
