@@ -21,7 +21,7 @@
   margin: 0px 10px 0px 0px;
 }
 .header__div .icon-R {
-  margin: 0px 0px 0px 10px;
+  margin: 0px 10px 0px 10px;
   font-family: Saira Stencil One;
   width: 20px;
   border: 2px solid whitesmoke;
@@ -65,6 +65,7 @@
   border-radius: 5px;
   background-color: lightCyan;
   color: grey;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
   margin: 10px 0px 0px 0px;
@@ -89,32 +90,36 @@ main {
 }
 main .information {
   display: flex;
+  width: 100vw;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 20px;
+  padding: 0px;
 }
 @media screen and (max-width: 500px) {
   main .information {
     display: flex;
     flex-direction: column-reverse;
-    width: 100vw;
+    width: 95vw;
     justify-content: space-around;
     align-items: center;
+    margin: 10px;
   }
 }
 main .information__div {
   display: flex;
   flex-direction: column;
-  height: 200px;
+  height: 150px;
   justify-content: space-evenly;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
   main .information__div {
     display: flex;
-    flex-direction: column-reverse;
-    margin-left: 20px;
-    height: 200px;
+    flex-direction: column;
+    margin: 10px;
+    height: 150px;
     align-items: center;
     justify-content: center;
   }
@@ -130,14 +135,15 @@ main .information__div .first-line {
     padding: 10px;
     color: aqua;
     font-size: 14px;
-    margin: 20px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
   }
 }
 main .information__div .second-line {
+  text-align: center;
   font-weight: bold;
   font-size: 25px;
   flex-wrap: wrap;
-  margin: 10px 10px 10px 10px;
+  margin: 15px 10px 0px 10px;
 }
 @media screen and (max-width: 500px) {
   main .information__div .second-line {
@@ -153,6 +159,7 @@ main .information__div button {
   border-radius: 5px;
   background-color: lightcyan;
   color: grey;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
   margin: 30px 0px 30px 0px;
@@ -165,49 +172,57 @@ main .information__div button {
   }
 }
 main .information__image {
+  background-image: url("/rupali.jpeg");
+  background-size: cover;
   margin: 0px 20px 0px 20px;
-  height: auto;
+  width: 40vw;
+  height: 30vh;
 }
 @media screen and (max-width: 500px) {
   main .information__image {
-    margin: auto;
+    background-size: cover;
+    width: 60vw;
   }
 }
 main .technicalskills {
   display: flex;
   flex-direction: column;
-  min-height: 100px;
+  min-height: 150px;
   margin: 20px;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
   main .technicalskills {
     display: flex;
     flex-direction: column;
+    min-height: 300px;
+    margin: 10px;
     padding: 2px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 }
 main .technicalskills__heading {
   display: flex;
-  margin: 20px;
+  margin: 10px;
   justify-items: center;
   align-items: center;
 }
 @media screen and (max-width: 500px) {
   main .technicalskills__heading {
     display: flex;
-    margin: 20px;
+    margin: 10px;
+    font-size: 20px;
+    text-align: center;
     justify-items: center;
     align-items: center;
   }
 }
 main .technicalskills .icon-list {
-  height: 50px;
-  width: 90%;
+  height: 10vh;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -215,8 +230,12 @@ main .technicalskills .icon-list {
 }
 @media screen and (max-width: 500px) {
   main .technicalskills .icon-list {
-    width: 480px;
-    height: 50px;
+    font-size: medium;
+    width: 90vw;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 }
 main .technicalskills .icon-pair {
@@ -224,7 +243,7 @@ main .technicalskills .icon-pair {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10px 0px 10px;
+  margin: 10px 10px 10px 10px;
 }
 main .technicalskills .icon {
   margin: 0px 0px 10px 0px;
@@ -252,6 +271,7 @@ main .projects__heading {
 }
 @media screen and (max-width: 500px) {
   main .projects__heading {
+    width: 80vw;
     padding-left: 15px;
   }
 }
@@ -262,6 +282,16 @@ main .projects__div {
   justify-content: space-between;
   margin: 5px;
   padding: 5px;
+}
+@media screen and (max-width: 500px) {
+  main .projects__div {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding-left: 15px;
+  }
 }
 main .projects__div .project-detail {
   display: flex;
@@ -309,8 +339,20 @@ main .aboutme {
   margin: 20px;
   padding: 20px;
 }
+@media screen and (max-width: 500px) {
+  main .aboutme {
+    width: 90vw;
+    margin: 10px;
+    padding: 10px;
+  }
+}
 main .aboutme .aboutme-heading {
-  margin: 0px 0px 10px 0px;
+  margin: 5px 0px 10px 0px;
+}
+@media screen and (max-width: 500px) {
+  main .aboutme .aboutme-heading {
+    font-size: 20px;
+  }
 }
 main .aboutme .left-section {
   display: flex;
@@ -321,10 +363,19 @@ main .aboutme .left-section {
   align-items: center;
   margin: 20px;
 }
+@media screen and (max-width: 500px) {
+  main .aboutme .left-section {
+    margin: 10px;
+  }
+}
 main .aboutme .right-section {
+  border: 1px solid white;
+  background-image: url("./rupali2.jpg");
+  background-size: cover;
   margin-right: 0px;
   padding-left: 20px;
-  height: 150px;
+  width: 20vw;
+  height: 40vh;
 }
 @media screen and (max-width: 500px) {
   main .aboutme .right-section {
