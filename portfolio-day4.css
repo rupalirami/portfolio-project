@@ -172,7 +172,7 @@ main .information__div button {
   }
 }
 main .information__image {
-  background-image: url("/rupali.jpeg");
+  background-image: url("./rupali.jpeg");
   background-size: cover;
   margin: 0px 20px 0px 20px;
   width: 40vw;
@@ -369,7 +369,6 @@ main .aboutme .left-section {
   }
 }
 main .aboutme .right-section {
-  border: 1px solid white;
   background-image: url("./rupali2.jpg");
   background-size: cover;
   margin-right: 0px;

@@ -158,7 +158,7 @@ main
         } // &__div end 
         &__image { // &__image start
             // border: 1px solid white;
-            background-image: url("/rupali.jpeg");
+            background-image: url("./rupali.jpeg");
             background-size: cover;
             margin:0px 20px 0px 20px;
             width: 40vw;
@@ -334,7 +334,7 @@ main
             } // .aboutme-heading media end
         } // .left-section end
         .right-section { // .right-section start
-            border: 1px solid white;
+            // border: 1px solid white;
             // background-image: url("./rupali.jpeg");
             background-image: url("./rupali2.jpg");
             background-size: cover;
