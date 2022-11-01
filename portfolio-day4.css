@@ -299,11 +299,13 @@ main .projects__div .project-detail {
   justify-content: center;
   align-items: center;
   margin: 10px 10px 10px 10px;
+  padding: 7px;
   border: 1px dotted white;
   border-radius: 5px;
 }
 main .projects__div .project-detail .project-subheading {
   font-size: 18px;
+  color: lightCyan;
   margin: 10px 0px 10px 10px;
 }
 main .projects__div .project-detail .project-code {
@@ -313,6 +315,7 @@ main .projects__div .project-detail .project-code {
 }
 main .projects__div .project-detail .project-desc {
   margin: 0px 0px 5px 5px;
+  font-size: 14px;
 }
 main .projects__div .project-detail .project-links {
   display: flex;

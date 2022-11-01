@@ -270,10 +270,12 @@ main
                 justify-content: center;
                 align-items: center;
                 margin: 10px 10px 10px 10px;
+                padding: 7px;
                 border: 1px dotted white;
                 border-radius: 5px;;
                 .project-subheading { // .project-subheading start
                     font-size: 18px;
+                    color : $fontColorAlternate;
                     margin: 10px 0px 10px 10px;
                 } // .project-subheading end
                 .project-code { // .project-code start
@@ -283,6 +285,7 @@ main
                 } // .project-code end
                 .project-desc { // .project-desc start
                     margin: 0px 0px 5px 5px;
+                    font-size: 14px;
                 } // .project-desc end
                 .project-links { // .project-links start
                     display: flex;
